@@ -1,0 +1,23 @@
+Name:           GuiChat
+Version:        1.0
+Synopsis:       A chat in which you can paint.
+Description:    A GuiChat that works using the simple chat server.
+               
+License:        MIT
+License-File:   LICENSE
+Author:         Julian Fleischer
+Maintainer:     julian.fleischer@fu-berlin.de
+Build-Type:     Simple
+Cabal-Version:  >= 1.10
+Category:       Utility
+Stability:      provisional
+
+Executable GuiChat
+    Hs-Source-Dirs:     src
+    Other-Modules:      GuiChat.Types
+                        , GuiChat.EventHandling
+                        , GuiChat.Canvas
+    Main-Is:            chat.hs
+    Build-Depends:      base >= 3 && < 5, network, gloss
+    default-language:   Haskell2010
+
