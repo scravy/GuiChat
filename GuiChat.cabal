@@ -1,5 +1,5 @@
 Name:           GuiChat
-Version:        1.0
+Version:        1.0.1
 Synopsis:       A chat in which you can paint.
 Description:    A GuiChat that works using the simple chat server.
                
@@ -18,6 +18,6 @@ Executable GuiChat
                         , GuiChat.EventHandling
                         , GuiChat.Canvas
     Main-Is:            chat.hs
-    Build-Depends:      base >= 3 && < 5, network, gloss
+    Build-Depends:      base >= 3 && < 5, network, gloss >=1.9
     default-language:   Haskell2010
 

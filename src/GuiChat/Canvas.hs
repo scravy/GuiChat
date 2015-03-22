@@ -4,7 +4,7 @@ module GuiChat.Canvas where
 
 import Graphics.Gloss.Data.Color
 import Graphics.Gloss.Data.Picture
-import Graphics.Gloss.Geometry
+import Graphics.Gloss.Geometry.Line
 import GuiChat.Types
 
 
