@@ -4,7 +4,7 @@ module GuiChat.Canvas where
 
 import Graphics.Gloss.Data.Color
 import Graphics.Gloss.Data.Picture
-import Graphics.Gloss.Geometry.Line
+import Graphics.Gloss.Geometry.Angle
 import GuiChat.Types
 
 
@@ -46,7 +46,7 @@ mkPicture (Image t (r,g,b,a) (x,y)) = adjust $ case t of
     TSquare a r -> Rotate r $ rectangleWire a a
     TSquare' a r -> Rotate r $ rectangleSolid a a
   where
-    adjust = Translate x y . Color (rawColor r g b a)
+    adjust = Translate x y . Color (makeColor r g b a)
 
 
 renderCanvas cvs@(Canvas { cPictures = pics, cStart = start,
